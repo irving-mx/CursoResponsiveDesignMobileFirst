@@ -397,27 +397,27 @@ main {
 
 .product-cards--container{
     height: 700px;
-    width:90%;
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
 }
 .product-detail--card {
-    width:100%;
-    min-width:288px;
-    height:160px;
+    width:90%;
+    min-width: 288px;
+    max-width: 400px;
+    height:150px;
+    margin:15px auto;
+    padding:15px;
     background-color: rgba(40, 38, 35, 1);
+    border-radius: 5px;
     box-shadow:0px 4px 8px rgba(89, 73, 30, 0.16);
-    margin:10px;
-    padding:10px;
-    text-align: start;
-
 }
 .product-detail--card span{
+    display: inline-block;
     width:24px;
     height:24px;
-    display: inline-block;
     margin-bottom:5px;
     background-size:cover;
     background-repeat:no-repeat;
@@ -435,16 +435,16 @@ main {
 .product-detail--card .check {
     background-image: url('./assets/icons/check-circle.svg');
 }
-.product-detail--card .product--card-title {
-    font-weight:bold;
+.product--card-title {
+    margin-bottom:15px;
     font-size:1.8rem;
+    font-weight:bold;
     line-height:1.8rem;
     color: var(--just-white);
-    margin-bottom:1rem;
 }
-.product-detail--card .product--card-body {
-    font-weight:500;
+.product--card-body {
     font-size:1.4rem;
+    font-weight:500;
     line-height:1.8rem;
     color: #808080;
 }
