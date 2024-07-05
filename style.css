@@ -109,7 +109,7 @@ main {
     width: 100%;
     height: auto;
     padding-top: 80px;
-    padding-bottom: 30px; 
+    padding-bottom: 66px; 
     text-align: center;
 }
 .main-exchange-container .backgroundImg {
@@ -335,4 +335,116 @@ main {
     line-height: 1.5rem;
     color: var(--warm-black);
     font-weight: 300;
+}
+
+
+/* Seccion de Beneficios (black) */
+
+.main-product-detail{
+    position: relative;
+    width:100%;
+    min-width:320px;
+    height:auto;
+    padding:20px 10px;
+    background-color: var(--warm-black);
+
+}
+/* .main-product-detail{
+    background-color: var(--warm-black);
+    width:100%;
+    min-width:320px;
+    height:auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} */
+.product-detail--batata-logo{
+    position:absolute;
+    width:40px;
+    height:25px;
+    top:-10px;
+    left:calc(50% - 20px);
+    background-image:url('./assets/imgs/papa.svg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.product-detail--title h2{
+    margin-bottom: 20px;
+    font-size:2.4rem;
+    font-weight:bold;
+    line-height:2.6rem;
+    color: var(--just-white);
+}
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height:1.8rem;
+    color: #808080;
+}
+
+.product-cards--container{
+    height: 700px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.product-detail--card {
+    width:100%;
+    min-width:288px;
+    height:160px;
+    background-color: rgba(40, 38, 35, 1);
+    box-shadow:0px 4px 8px rgba(89, 73, 30, 0.16);
+    margin:10px;
+    padding:10px;
+    text-align: start;
+
+}
+.product-detail--card span{
+    width:24px;
+    height:24px;
+    display: inline-block;
+    margin-bottom:5px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.product-detail--card .clock{
+    background-image: url('./assets/icons/clock.svg');
+}
+.product-detail--card .eye {
+    background-image: url('./assets/icons/eye.svg');
+}
+.product-detail--card .money {
+    background-image: url('./assets/icons/dollar.svg');
+}
+.product-detail--card .check {
+    background-image: url('./assets/icons/check-circle.svg');
+}
+.product-detail--card .product--card-title {
+    font-weight:bold;
+    font-size:1.8rem;
+    line-height:1.8rem;
+    color: var(--just-white);
+    margin-bottom:1rem;
+}
+.product-detail--card .product--card-body {
+    font-weight:500;
+    font-size:1.4rem;
+    line-height:1.8rem;
+    color: #808080;
 }
